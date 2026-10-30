@@ -1,8 +1,8 @@
 class Audiobook < Formula
   desc "Turn a book you own into an expressive audiobook, cloud or fully local"
   homepage "https://github.com/olostan/expressive-audiobook"
-  url "https://github.com/olostan/expressive-audiobook/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "b8a1d10da60ebd4b48bc44ae61afa703ff76333a811a56f234c788c3dac23565"
+  url "https://github.com/olostan/expressive-audiobook/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "8ade3c622599a5c506e37f34ac3b42cbe32dd1c7ab280c4157b61847c2f97a72"
   license "Apache-2.0"
 
   depends_on "ffmpeg"
