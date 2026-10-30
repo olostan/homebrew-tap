@@ -1,5 +1,5 @@
 class Audiobook < Formula
-  desc "Turn a book you own into an expressive audiobook, with Gemini or fully local models"
+  desc "Turn a book you own into an expressive audiobook, cloud or fully local"
   homepage "https://github.com/olostan/expressive-audiobook"
   url "https://github.com/olostan/expressive-audiobook/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "b8a1d10da60ebd4b48bc44ae61afa703ff76333a811a56f234c788c3dac23565"
@@ -13,7 +13,7 @@ class Audiobook < Formula
   def install
     (bin/"audiobook").write <<~SH
       #!/bin/bash
-      exec "#{Formula["uv"].opt_bin}/uvx" --quiet --python ">=3.11" --from "#{stable.url}" audiobook "$@"
+      exec "#{formula_opt_bin("uv")}/uvx" --quiet --python ">=3.11" --from "#{stable.url}" audiobook "$@"
     SH
   end
 
